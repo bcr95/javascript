@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBGE</title>
+</head>
+<body>
+    <h1>Censo 2023</h1>
+    <div id="res">
+
+    </div>
+    <script>
+        var pais = window.prompt('Digite seu país de origem')
+        var res = document.querySelector('#res')
+        res.innerHTML = `Seu país é ${pais}`
+        if (pais != 'Brasil') {
+            res.innerHTML += '<p>Você é estrangeiro(a)</p>'
+        } else {
+            res.innerHTML += '<p>Você é brasileiro(a)'
+        }
+    </script>
+</body>
+</html>
